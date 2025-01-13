@@ -2,7 +2,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import Cylinder from "../Canvas/Cylinder";
+import Cylinder from "./Cylinder";
 import React from "react";
 
 const Scene = () => {

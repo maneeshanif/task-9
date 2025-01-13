@@ -25,7 +25,7 @@ const Client = () => {
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
-      const data = await fetch(" https://fakestoreapi.com/products");
+      const data = await fetch("https://fakestoreapi.com/products");
       const response = await data.json();
       setResponse(response);
       setLoading(false);
@@ -74,8 +74,9 @@ const Client = () => {
                       ({item.rating.count}){" "}
                     </span>
                   </p>
-                  <button className="px-4 py-2 bg-black text-white hover:bg-myorange hover:text-balck">
-                    Buy now
+                  <button  className="bg-myorange hover:bg-myorange/80 text-white font-bold py-2 px-4 rounded-sm">
+                    <Link  href={`/clientfetch/${item.id}`} >Buy now</Link>
+                  
                   </button>
                 </div>
               </div>

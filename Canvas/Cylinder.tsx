@@ -85,6 +85,8 @@ const Cylinder = ({ gap }: { gap: number }) => {
     }
   });
 
+  
+
   return (
     <>
     {/* <Group ref={cyl}/> */}
